@@ -1,0 +1,172 @@
+/*
+	Max-width: 640px;
+*/
+
+* {
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: FuturaStd-Book;
+	src: url("../assets/fonts/FuturaStd-Book.otf");
+}
+
+/*@font-face {
+	font-family: FuturaStd-Bold;
+	src: url("../assets/fonts/FuturaStd-Bold.otf");
+}*/
+
+@font-face {
+	font-family: CooperBlackStd;
+	src: url("../assets/fonts/CooperBlackStd.otf");
+}
+
+body {
+	background-color: #000;
+	font-family: FuturaStd-Book;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: .14em;
+	line-height: 1.65em;
+	text-transform: none;
+	color: #fff;
+	max-width: 100%;
+	cursor: url(https://cdn.emojidex.com/emoji/px128/chopsticks.png?1477107440) 6 122, pointer;
+}
+
+h2, footer {
+	font-family: CooperBlackStd;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 170ms ease-in-out;
+}
+
+a:visited {
+	color: none;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	height: 82px;
+	width: 100%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+header a {
+	flex: 0 0 auto;
+	padding: 8px;
+}
+
+.logo {
+	width: 70px;
+}
+
+.banner {
+	background-image: url("../assets/images/bg.png");
+	background-size: cover;
+	background-position: 50% 50%;
+	width: 100%;
+	height: 360px;
+}
+
+.products-content {
+	/*max-width: 1800px;*/
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.products-content img {
+	width: 100%;
+}
+
+.product-image {
+	position: relative;
+	padding-bottom: 17px;
+}
+
+.block {
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+@keyframes fadeIn {
+	0%, 100% { 
+		opacity: 0; 
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.product-image img:nth-child(1) {
+	opacity: 1;
+	animation: fadeOut 6s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+.product-image img:nth-child(2) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	animation: fadeIn 6s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+.product-desc {
+/*	padding-top: 17px;
+	padding-bottom: 17px;*/
+}
+
+.product-desc h2 {
+	-webkit-margin-after: 1em;
+}
+
+.product-desc p {
+	hyphens: auto;
+	-webkit-margin-after: 1em;
+}
+
+.price-box {
+	padding-bottom: 17px;
+}
+
+.price {
+	font-family: CooperBlackStd;
+	font-size: 1.1em;
+}
+
+button {
+	color: #666666;
+	background-color: #cccccc;
+	border: none;
+	padding: 1em 2.5em;
+	font-weight: 700;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	opacity: 0.8;
+}
