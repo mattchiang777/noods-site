@@ -48,7 +48,11 @@ footer {
 a {
 	color: #fff;
 	text-decoration: none;
-	transition: color 170ms ease-in-out;
+	transition: opacity 170ms ease-in-out;
+}
+
+a:hover {
+	opacity: 0.4;
 }
 
 a:visited {
@@ -62,14 +66,23 @@ header {
 	width: 100%;
 	padding-top: 8px;
 	padding-bottom: 8px;
+	align-items: center;
 }
 
 header a {
-	flex: 0 0 auto;
-	padding: 8px;
+	padding: 16px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
 }
 
 .logo {
+	flex: 1 1 auto;
+}
+
+.logo img {
 	width: 70px;
 }
 
